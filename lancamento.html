@@ -1,104 +1,186 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ford</title>    
-    <link href="css/reset.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/lancamento.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/lancamento.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/ford-96.png"  sizes="512x512"  type="image/x-icon">
+    <title>Lançamento</title>
 </head>
 <body>
-    <header>       
-        <div>
-            <img src="img/logo-ford-256.png" width="150" class="logo" />
-        </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="lancamento.html">Lançamento</a>
-                </li>
-                <li>
-                    <a href="contato.html">Contato</a>
-                </li>
-            </ul>
-        </nav>
-
+    <header>
+        <section class="header-container"> 
+            <a href="index.html">
+                <img src="./img/logo-ford-256.png" alt="Logo da Ford" class="logo-header"> 
+           </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="lancamento.html">Lançamento</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                   
+                </ul>
+            </nav>
+        </section>
     </header>
-    <main>
-        <div>
-            <iframe style = "display: block; margin-bottom: 30px; margin-left: auto; margin-right: auto; width: 100%;
-            height: 500px;" src="https://www.youtube-nocookie.com/embed/vQsryuNmsL0?controls=0&autoplay=1&modestbranding=0&loop=1&mute=1&rel=0&hd=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div>
-            <ul class="modelcars">
-                <li> 
-                    <img src="img/XL Cabine.jpg" class="photocar">
-                    <div class="infocar">
-                        <div>
-                            <input type="checkbox" value="car1" class="checkbox">
-                        </div>
-                        <div class="info">
-                            <span class="textmodel">XL Cabine Simples 2.2 Diesel 4X4 MT 2022</span>
-                            <span class="textprice">Preço Sugerido: R$ 183.850</span>
-                        </div>
-                        <div>
-                            <img src="img/info.png">
-                        </div>
+   
+    <main> 
+        <section class="main-container">
+            <div class="video-main">
+                
+                <iframe width="1300px" height="300" 
+                src="https://www.youtube.com/embed/vQsryuNmsL0?controls=1&autoplay=1&mute=1&loop=1">
+                </iframe> 
+                <div class="text-main">
+                    <p> A picape mais vendida do Brasil está de volta com um novo design e mais tecnologia. 
+                        Conheça a Ford Ranger 2022 e descubra por que ela é a melhor opção para o seu dia a dia.
+                     O Ford Ranger 2022 é uma picape robusta e versátil, com design moderno e interior espaçoso
+                    e tecnológico. Oferece motores potentes a diesel ou gasolina, tração 4x4 e suspensão 
+                    reforçada para desempenho off-road. Equipada com tecnologia avançada, como o sistema SYNC®, 
+                    Apple CarPlay, Android Auto e recursos de segurança como frenagem autônoma e alerta de colisão,
+                     a Ranger 2022 combina força, conforto e inovação para uso urbano ou aventuras mais extremas</p>
+                    </div>  
+            </div>
+            
+        </section>
+        <section class="cars-maincars-main">
+            
+                <div class="car">
+                    <div class="car-img">
+                    <a href="https://www.ford.com.br/picapes/ranger/compare-as-versoes/xls-3-0-diesel-4wd-at/">
+                        <img src="./img/storm.jpg" alt="Ford Storm" class="cars">
+                    </a> 
                     </div>
-                </li>
-                <li>
-                    <img src="img/xls 2.2 diesel.jpg" class="photocar">
-                    <div class="infocar">
-                        <div>
-                            <input type="checkbox" value="car1" class="checkbox">
-                        </div>
-                        <div class="info">
-                            <span class="textmodel">XLS 2.2 Diesel 4X4 AT 2022</span>
-                            <span class="textprice">Preço Sugerido: R$ 220.690</span>
-                        </div>
-                        <div>
-                            <img src="img/info.png">
-                        </div>
+                    <div class="checkbox"> 
+                        <input type="checkbox" id="storm_checkbox">
+                        <label for="storm_checkbox">Ford Storm 2.0 Diesel 4x4 2023  A partir de R$ 289.9901</label>   
+                        
                     </div>
-                </li>
-                <li>
-                    <img src="img/storm.jpg" class="photocar">
-                    <div class="infocar">
-                        <div>
-                            <input type="checkbox" value="car1" class="checkbox">
-                        </div>
-                        <div class="info">
-                            <span class="textmodel">Storm 3.2 Diesel 4X4 AT 2022</span>
-                            <span class="textprice">Preço Sugerido: R$ 222.790</span>
-                        </div>
-                        <div>
-                            <img src="img/info.png">
-                        </div>
+                   
+                    <div class="checkbox__container__texto__info"><img class="checkbox__container__img__info"
+                        src="./img/info.png" alt="logo de informação">
+                </div>
+                <div class="info">
+                    <table class="checkbox__container__table">
+                        <thead>
+                            <tr class="checkbox__container__table__tr">
+                                <th>Motor:</th>
+                                <th>Potência:</th>
+                                <th>Tração:</th>
+                                <th>Transmissão:</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="checkbox__container__table__tr">
+                                <td>2.0 Turbo Diesel</td>
+                                <td>170 cv</td>
+                                <td>4x4</td>
+                                <td>Automática de 6 marchas</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                   
+                </div>
+                <div class="car">
+                    <div class="car-img"> 
+                    <a href="https://www.ford.com.br/picapes/ranger/compare-as-versoes/xl-20-diesel-4x4-mt/">
+                        <img src="./img/XL Cabine.jpg" alt="Ford XL Cabine" class="cars">
+                    </a> 
+                    </div>   
+                    <div class="checkbox"> 
+                        <input type="checkbox" id="storm_checkbox">
+                        <label for="storm_checkbox">Ford Storm 2.0 Diesel 4x4 2023  A partir de R$ 289.9901</label>   
+                        
                     </div>
-                </li>
-            </ul>
-        </div>
-        <div style="text-align: center;padding-bottom: 20px;">
-            <button type="button" style="height: 40px; width: 200px;">Comparar Carros</button>
-        </div> 
+                     
+                    <div class="checkbox__container__texto__info">
+                        <img class="checkbox__container__img__info"
+                        src="./img/info.png" alt="logo de informação">
+                </div>
+                <div class="info">
+                    <table class="checkbox__container__table">
+                        <thead>
+                            <tr class="checkbox__container__table__tr">
+                                <th>Motor:</th>
+                                <th>Potência:</th>
+                                <th>Tração:</th>
+                                <th>Transmissão:</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="checkbox__container__table__tr">
+                                <td>3.0 V6 EcoBoost</td>
+                                <td>292 cv</td>
+                                <td>4x4</td>
+                                <td>Automática de 10 marchas</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                </div>
+                <div class="car"> 
+                    <div class="car-img"> 
+                    <a href="https://www.ford.com.br/picapes/ranger/compare-as-versoes/xl-20-diesel-4x4-mt/">
+                        <img src="./img/xls 2.2 diesel.jpg" alt="Ford XLS 2.2 Diesel" class="cars">
+                    </a> 
+                </div>   
+                    <div class="checkbox"> 
+                        <input type="checkbox" id="storm_checkbox">
+                        <label for="storm_checkbox">Ford Storm 2.0 Diesel 4x4 2023  A partir de R$ 289.9901</label>   
+                        
+                    </div>
+                    <div class="checkbox__container__texto__info"><img class="checkbox__container__img__info"
+                        src="./img/info.png" alt="logo de informação">
+                </div>
+                <div class="info">
+                    <table class="checkbox__container__table">
+                        <thead>
+                            <tr class="checkbox__container__table__tr">
+                                <th>Motor:</th>
+                                <th>Potência:</th>
+                                <th>Tração:</th>
+                                <th>Transmissão:</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="checkbox__container__table__tr">
+                                <td>2.0 Turbo Diesel</td>
+                                <td>170 cv</td>
+                                <td>4x4</td>
+                                <td>Automática de 6 marchas</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                    
+                </div>
+        </section> 
+        <button class="button-main">Comparar carros</button>
+
+        
+
     </main>
     <footer>
-        <nav id="social">
-            <ul>
-                <li><span class="redesociais">Redes Sociais</span></li>
-                <li><a href="#" title="Facebook"><img src="img/facebook-50.png"></a></li>
-                <li><a href="#" title="YouTube"><img src="img/youtube-squared-50.png"></a></li>
-                <li><a href="#" title="Instagram"><img src="img/instagram-logo-50.png"></a></li>
-            </ul>
-        </nav>
-        <div>
-           <img src="img/ford-96.png" width="70"  />
-        </div>
-    </footer>    
+        <section class="footer-container">
+            <div class="social-icons">
+                <p id="redes_footer">Redes Sociais</p>
+                <a href="https://www.facebook.com/FordBrasil" target="_blank">
+                    <img src="./img/facebook-50.png" alt="Facebook">
+                </a>
+                <a href="https://www.youtube.com/@fordbrasil" target="_blank">
+                    <img src="./img/youtube-squared-50.png" alt="YouTube">
+                </a>
+                <a href="https://www.instagram.com/fordbrasil/" target="_blank">
+                    <img src="./img/instagram-logo-50.png" alt="Instagram">
+                </a>
+            </div>
+            <div class="logo-footer">
+                <img src="./img/ford-96.png" alt="Logo Ford">
+            </div>
+        </section> 
+    </footer>
 </body>
 </html>
