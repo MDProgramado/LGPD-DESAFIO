@@ -75,8 +75,9 @@
                     </div>
                     <div class="checkbox-container"> 
                         
-                            <input type="checkbox" name="checkbox-termoDeUso" for="termoDeUso" id="termoDeUso">
-                            <label for="termoDeUso">Sim. Li e concordo com os Termos e Condições. </label>
+                        <input type="checkbox" name="checkbox-termoDeUso" id="termoDeUso" required>
+                        <label for="termoDeUso">Sim. Li e concordo com os Termos e Condições.</label>
+                        
                        
 
                             <input type="checkbox" name="receberPropaganda" for="confirmacaoPropaganda" id="confirmacaoPropaganda">
@@ -84,7 +85,7 @@
                         </div>
                         </div>
                     </div>
-                    <input type="submit" value="Enviar">
+                    <input type="submit" value="Enviar" id="enviar" disabled>
 
                   </div> 
                         
@@ -116,4 +117,5 @@
             </section> 
         </footer>
 </body>
+<script src="js/contato.js"></script>
 </html>
